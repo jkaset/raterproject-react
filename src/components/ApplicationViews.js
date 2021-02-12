@@ -11,11 +11,11 @@ export const ApplicationViews = () => {
             backgroundColor: "lightgoldenrodyellow"
         }}>
             <GameProvider>
-            <Route exact path="/" render={props => <GameList {...props} />} />
+                <Route exact path="/" render={props => <GameList {...props} />} />
 
-            <Route exact path="/games/:id(\d+)" render={props => <GameDetail {...props} 
-            />} />
-                
+                <Route exact path="/games/:gameId(\d+)" render={props => <GameDetail {...props}
+                />} />
+
             </GameProvider>
         </main>
     </>
