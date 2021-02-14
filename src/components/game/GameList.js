@@ -13,7 +13,7 @@ export const GameList = (props) => {
       <>
 
       <div style={{ marginTop: "2rem"}}>
-            <button onClick={() => props.history.push("/games/create")}>
+            <button onClick={() => props.history.push("/games/new")}>
                 Make Game
             </button>
             <div className="games">
@@ -23,7 +23,7 @@ export const GameList = (props) => {
             </div>
         </div>
 
-        <article className="games">
+        {/* <article className="games">
             { 
                 games.map(g => {
                     return <section key={`game--${g.id}`} className="game"> 
@@ -35,7 +35,7 @@ export const GameList = (props) => {
             }
 
         
-        </article>
+        </article> */}
 
         </> )}
 
